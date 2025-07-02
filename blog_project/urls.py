@@ -29,7 +29,7 @@ urlpatterns = [
     
     path('logout/', logout_page , name="logout_page"),
     
-    path('post-detail/<id>', post_detail , name="post_detail"),
+    path('post-detail/<int:id>/', post_detail , name="post_detail"),
     
     path('post-create/', post_create , name="post_create"),
     
